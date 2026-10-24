@@ -1,41 +1,47 @@
-# Ahmed Sameh
+# Hi, I'm Ahmed Sameh 👋
 
-**Data Engineer & Analyst**
+**Aspiring Data Engineer & Analyst**
 
-I work across Data Engineering and Data Analytics, building reliable data pipelines and transforming raw data into structured, analysis-ready datasets.
+I build data pipelines, work with SQL databases, and analyze data to support decision-making. My projects focus on Python ETL workflows, data modeling, machine learning classification, and analytical validation.
 
-My current work focuses on Python, SQL, PostgreSQL, ETL pipelines, data modeling, validation, and analytical workflows.
+Currently seeking **Junior Data Engineering** and **Data Analytics** positions where I can apply Python, SQL, and data pipeline development skills.
 
-## Current Focus
+## 🛠️ Technical Skills
 
-- Batch ETL pipelines with clear data contracts and repeatable loads
-- SQL analysis and dimension/fact modeling
-- Data-quality checks, regression tests, and reproducible project outputs
+**Languages & Tools**: Python • SQL • PostgreSQL • Git
 
-## Core Skills
+**Data Engineering**: ETL Pipelines • Data Validation • Dimensional Modeling • DuckDB
 
-| Area | Skills used in my projects |
-| --- | --- |
-| Data Engineering | Python, SQL, PostgreSQL, batch ETL, dimensional modeling, data validation |
-| Analytics | pandas, NumPy, exploratory analysis, sales metrics, Matplotlib, Seaborn |
-| Development | Git, GitHub, Jupyter, Python `unittest`, PostgreSQL integration tests |
+**Analytics & ML**: pandas • NumPy • scikit-learn • Matplotlib • Seaborn • Jupyter
 
-## Selected Projects
+**Testing**: unittest • pytest • Integration Tests
+
+## 📂 Featured Projects
 
 ### [E-commerce Data Pipeline](https://github.com/abosameh522/ecommerce-data-pipeline)
+Python ETL pipeline that processes Olist e-commerce CSVs with validation, loads dimensional data into PostgreSQL, and provides SQL analytics. Includes 20 integration tests.
 
-Cleans and validates six Olist CSV files, loads separate order-item and payment facts into PostgreSQL, and provides SQL views for sales analysis. Includes transaction and repeat-load tests.
+**Tech**: Python • PostgreSQL • DuckDB • unittest
 
 ### [Credit Risk Analysis](https://github.com/abosameh522/credit-risk-analysis)
+Historical credit risk classification comparing Random Forest, Logistic Regression, and Decision Trees. Evaluates screening thresholds and business trade-offs using German credit data.
 
-Examines historical credit outcomes through exploratory analysis and classification, then compares screening thresholds to quantify review volume, false positives, and missed bad outcomes.
+**Tech**: Python • scikit-learn • pandas • Jupyter
 
 ### [Customer Churn Prediction](https://github.com/abosameh522/customer-churn-prediction)
+Telco customer churn prediction with three-model comparison and retention prioritization using capture/lift evaluation on IBM dataset.
 
-Compares three classifiers with training-only preprocessing and ranks test customers by churn probability to measure capture and lift at simulated retention-review budgets.
+**Tech**: Python • scikit-learn • pandas • Jupyter
 
-The credit and churn analyses use historical labels to evaluate decision-support scenarios; they do not report deployed systems or measured intervention outcomes.
+### [CS/DE Learning Platform](https://github.com/abosameh522/cs-de-roadmap)
+Flask web application with PostgreSQL backend, Alembic migrations, and comprehensive deployment documentation for cloud platforms.
 
-## Contact
+**Tech**: Python • Flask • PostgreSQL • SQLAlchemy • Docker
 
-[GitHub — abosameh522](https://github.com/abosameh522)
+## 📫 Contact
+
+- GitHub: [@abosameh522](https://github.com/abosameh522)
+
+---
+
+*All project repositories include detailed README files with setup instructions, methodologies, and limitations.*
