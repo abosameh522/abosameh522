@@ -33,11 +33,6 @@ Telco customer churn prediction with three-model comparison and retention priori
 
 **Tech**: Python • scikit-learn • pandas • Jupyter
 
-### [CS/DE Learning Platform](https://github.com/abosameh522/cs-de-roadmap)
-Flask web application with PostgreSQL backend, Alembic migrations, and comprehensive deployment documentation for cloud platforms.
-
-**Tech**: Python • Flask • PostgreSQL • SQLAlchemy • Docker
-
 ## 📫 Contact
 
 - GitHub: [@abosameh522](https://github.com/abosameh522)
