@@ -1,47 +1,36 @@
-# Hi, I'm Ahmed Sameh 👋
+# Ahmed Sameh
 
-**Aspiring Data Engineer & Analyst**
+I am a Computer Science and AI student at Mansoura University (class of 2027) with a deep interest in how data flows from raw sources to actionable insights. As a self-taught Data Engineer, I spend my time building reproducible pipelines and exploring the intersection of software engineering and data analysis. I genuinely enjoy the puzzle of designing idempotent loads and optimizing warehouse schemas to ensure data integrity. Currently, I am seeking Junior Data Engineer or Analytics Engineer roles within Egypt or remotely. I'm eager to contribute to production-grade data platforms and continue learning from real-world scale challenges.
 
-I build data pipelines, work with SQL databases, and analyze data to support decision-making. My projects focus on Python ETL workflows, data modeling, machine learning classification, and analytical validation.
+## 🛠 Skills
 
-Currently seeking **Junior Data Engineering** and **Data Analytics** positions where I can apply Python, SQL, and data pipeline development skills.
+| Group | Technologies |
+| :--- | :--- |
+| **Languages** | Python |
+| **Data Engineering** | ETL Pipelines, Dimensional Modeling, Idempotent Loads, CI/CD, Data Validation |
+| **Databases & SQL** | PostgreSQL, Analytical SQL, Views |
+| **ML & Analytics** | pandas, scikit-learn, Classification, Model Evaluation |
+| **Tools** | Git, GitHub, Docker, Ruff, Pytest |
 
-## 🛠️ Technical Skills
+## 🚀 Featured Projects
 
-**Languages & Tools**: Python • SQL • PostgreSQL • Git
+| Repository | Description | DE Skill Proven |
+| :--- | :--- | :--- |
+| [`ecommerce-data-pipeline`](https://github.com/abosameh522/ecommerce-data-pipeline) | Batch ETL from Olist CSVs to a PostgreSQL star schema | Dimensional Modeling & Idempotency |
+| [`customer-churn-prediction`](https://github.com/abosameh522/customer-churn-prediction) | Predictive model for telco churn using a full ML pipeline | Feature Engineering & Evaluation |
+| [`credit-risk-analysis`](https://github.com/abosameh522/credit-risk-analysis) | Risk assessment pipeline using historical German credit data | Data Cleaning & Model Interpretability |
 
-**Data Engineering**: ETL Pipelines • Data Validation • Dimensional Modeling • DuckDB
+## 📚 Currently Learning
+- Distributed computing with Apache Spark.
+- Advanced dbt (data build tool) for warehouse transformation.
+- Cloud data warehousing (Snowflake / BigQuery).
 
-**Analytics & ML**: pandas • NumPy • scikit-learn • Matplotlib • Seaborn • Jupyter
+## 🏗 Currently Building
+- A real-time streaming pipeline using Kafka and ClickHouse.
 
-**Testing**: unittest • pytest • Integration Tests
+## 📊 Stats
+![Ahmed's GitHub stats](https://github-readme-stats.vercel.app/api?username=abosameh522&show_icons=true&theme=tokyonight)
 
-## 📂 Featured Projects
-
-### [E-commerce Data Pipeline](https://github.com/abosameh522/ecommerce-data-pipeline)
-Python ETL pipeline that processes Olist e-commerce CSVs with validation, loads dimensional data into PostgreSQL, and provides SQL analytics. Includes 20 integration tests.
-
-**Tech**: Python • PostgreSQL • DuckDB • unittest
-
-### [Credit Risk Analysis](https://github.com/abosameh522/credit-risk-analysis)
-Historical credit risk classification comparing Random Forest, Logistic Regression, and Decision Trees. Evaluates screening thresholds and business trade-offs using German credit data.
-
-**Tech**: Python • scikit-learn • pandas • Jupyter
-
-### [Customer Churn Prediction](https://github.com/abosameh522/customer-churn-prediction)
-Telco customer churn prediction with three-model comparison and retention prioritization using capture/lift evaluation on IBM dataset.
-
-**Tech**: Python • scikit-learn • pandas • Jupyter
-
-### [CS/DE Learning Platform](https://github.com/abosameh522/cs-de-roadmap)
-Flask web application with PostgreSQL backend, Alembic migrations, and comprehensive deployment documentation for cloud platforms.
-
-**Tech**: Python • Flask • PostgreSQL • SQLAlchemy • Docker
-
-## 📫 Contact
-
-- GitHub: [@abosameh522](https://github.com/abosameh522)
-
----
-
-*All project repositories include detailed README files with setup instructions, methodologies, and limitations.*
+## ✉️ Contact
+- **Email**: [abosameh1342005@gmail.com](mailto:abosameh1342005@gmail.com)
+- **LinkedIn**: [linkedin.com/in/ahmed-sameh-283927414](https://www.linkedin.com/in/ahmed-sameh-283927414)
