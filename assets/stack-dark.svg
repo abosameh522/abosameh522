@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-label="Verified Production Tech Stack and Next-Step Data Engineering Roadmap">
+  <defs>
+    <pattern id="sGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+    <linearGradient id="roadLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      @keyframes rakingLight {
+        0% { transform: translateX(-300px); }
+        100% { transform: translateX(1500px); }
+      }
+      @keyframes roadFlow {
+        to { stroke-dashoffset: -32; }
+      }
+      .road-anim {
+        stroke-dasharray: 5 6;
+        animation: roadFlow 2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="390" rx="16" fill="#06080F"/>
+  <rect width="1200" height="390" rx="16" fill="url(#sGrid)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="388.5" rx="15.25" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="28" y="36" class="mono" font-size="11.5" font-weight="700" fill="#22D3EE" letter-spacing="1.2">VERIFIED PRODUCTION STACK // ONLY TOOLS USED IN REPOSITORIES ABOVE</text>
+
+  <!-- 5 Architecture Layer Columns (x=28, 258, 488, 718, 948; width=218) -->
+  <!-- Column 1: Storage & Warehouse -->
+  <g transform="translate(28, 52)">
+    <rect width="218" height="176" rx="10" fill="#0D1322" stroke="#1E293B" stroke-width="1.2"/>
+    <path d="M 0 10 A 10 10 0 0 1 10 0 L 208 0 A 10 10 0 0 1 218 10" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <text x="16" y="25" class="mono" font-size="10.5" font-weight="800" fill="#22D3EE">01 · STORAGE &amp; LAKE</text>
+    
+    <rect x="16" y="38" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="55" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">DuckDB</text>
+    <text x="190" y="55" text-anchor="end" class="mono" font-size="9.5" fill="#22D3EE">OLAP ENGINE</text>
+
+    <rect x="16" y="72" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="89" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">Apache Parquet</text>
+    <text x="190" y="89" text-anchor="end" class="mono" font-size="9.5" fill="#22D3EE">COLUMNAR</text>
+
+    <rect x="16" y="106" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="123" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">PostgreSQL</text>
+    <text x="190" y="123" text-anchor="end" class="mono" font-size="9.5" fill="#22D3EE">STAR SCHEMA</text>
+
+    <rect x="16" y="140" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="157" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">SQL &amp; Python</text>
+    <text x="190" y="157" text-anchor="end" class="mono" font-size="9.5" fill="#22D3EE">CORE QUERY</text>
+  </g>
+
+  <!-- Column 2: Orchestration & Ops -->
+  <g transform="translate(258, 52)">
+    <rect width="218" height="176" rx="10" fill="#0D1322" stroke="#1E293B" stroke-width="1.2"/>
+    <path d="M 0 10 A 10 10 0 0 1 10 0 L 208 0 A 10 10 0 0 1 218 10" fill="none" stroke="#A855F7" stroke-width="2.5"/>
+    <text x="16" y="25" class="mono" font-size="10.5" font-weight="800" fill="#A855F7">02 · ORCHESTRATION</text>
+    
+    <rect x="16" y="38" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="55" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">Prefect</text>
+    <text x="190" y="55" text-anchor="end" class="mono" font-size="9.5" fill="#A855F7">DAG FLOWS</text>
+
+    <rect x="16" y="72" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="26" y="89" class="mono" font-size="11" font-weight="700" fill="#F8FAFC">Docker Compose</text>
+    <text x="192" y="89" text-anchor="end" class="mono" font-size="9" fill="#A855F7">CONTAINER</text>
+
+    <rect x="16" y="106" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="123" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">GitHub Actions</text>
+    <text x="190" y="123" text-anchor="end" class="mono" font-size="9.5" fill="#A855F7">CI / CRON</text>
+
+    <rect x="16" y="140" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="157" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">uv &amp; Ruff</text>
+    <text x="190" y="157" text-anchor="end" class="mono" font-size="9.5" fill="#A855F7">FAST TOOLING</text>
+  </g>
+
+  <!-- Column 3: Data Quality & Transforms -->
+  <g transform="translate(488, 52)">
+    <rect width="218" height="176" rx="10" fill="#0D1322" stroke="#1E293B" stroke-width="1.2"/>
+    <path d="M 0 10 A 10 10 0 0 1 10 0 L 208 0 A 10 10 0 0 1 218 10" fill="none" stroke="#10B981" stroke-width="2.5"/>
+    <text x="16" y="25" class="mono" font-size="10.5" font-weight="800" fill="#10B981">03 · QUALITY &amp; ETL</text>
+    
+    <rect x="16" y="38" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="55" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">Pandera</text>
+    <text x="190" y="55" text-anchor="end" class="mono" font-size="9.5" fill="#10B981">SCHEMA GATES</text>
+
+    <rect x="16" y="72" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="89" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">pytest</text>
+    <text x="190" y="89" text-anchor="end" class="mono" font-size="9.5" fill="#10B981">UNIT + INTEG</text>
+
+    <rect x="16" y="106" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="123" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">pandas</text>
+    <text x="190" y="123" text-anchor="end" class="mono" font-size="9.5" fill="#10B981">TRANSFORMS</text>
+
+    <rect x="16" y="140" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="26" y="157" class="mono" font-size="11" font-weight="700" fill="#F8FAFC">SQL Views</text>
+    <text x="192" y="157" text-anchor="end" class="mono" font-size="9" fill="#10B981">AUDIT CHECKS</text>
+  </g>
+
+  <!-- Column 4: Applied ML & Evaluation -->
+  <g transform="translate(718, 52)">
+    <rect width="218" height="176" rx="10" fill="#0D1322" stroke="#1E293B" stroke-width="1.2"/>
+    <path d="M 0 10 A 10 10 0 0 1 10 0 L 208 0 A 10 10 0 0 1 218 10" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+    <text x="16" y="25" class="mono" font-size="10.5" font-weight="800" fill="#F59E0B">04 · MODELING &amp; EVAL</text>
+    
+    <rect x="16" y="38" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="55" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">XGBoost</text>
+    <text x="190" y="55" text-anchor="end" class="mono" font-size="9.5" fill="#F59E0B">GRAD BOOST</text>
+
+    <rect x="16" y="72" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="89" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">LightGBM</text>
+    <text x="190" y="89" text-anchor="end" class="mono" font-size="9.5" fill="#F59E0B">FAST TREES</text>
+
+    <rect x="16" y="106" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="123" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">scikit-learn</text>
+    <text x="190" y="123" text-anchor="end" class="mono" font-size="9.5" fill="#F59E0B">PIPELINES/CV</text>
+
+    <rect x="16" y="140" width="186" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="26" y="157" class="mono" font-size="11" font-weight="700" fill="#F8FAFC">Cost Threshold</text>
+    <text x="192" y="157" text-anchor="end" class="mono" font-size="9" fill="#F59E0B">ECONOMICS</text>
+  </g>
+
+  <!-- Column 5: Serving & Visualization -->
+  <g transform="translate(948, 52)">
+    <rect width="224" height="176" rx="10" fill="#0D1322" stroke="#1E293B" stroke-width="1.2"/>
+    <path d="M 0 10 A 10 10 0 0 1 10 0 L 214 0 A 10 10 0 0 1 224 10" fill="none" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="16" y="25" class="mono" font-size="10.5" font-weight="800" fill="#F43F5E">05 · SERVING &amp; BI</text>
+    
+    <rect x="16" y="38" width="192" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="55" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">FastAPI</text>
+    <text x="196" y="55" text-anchor="end" class="mono" font-size="9.5" fill="#F43F5E">REST INFERENCE</text>
+
+    <rect x="16" y="72" width="192" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="89" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">Streamlit</text>
+    <text x="196" y="89" text-anchor="end" class="mono" font-size="9.5" fill="#F43F5E">DATA APPS</text>
+
+    <rect x="16" y="106" width="192" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="123" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">Plotly</text>
+    <text x="196" y="123" text-anchor="end" class="mono" font-size="9.5" fill="#F43F5E">INTERACTIVE</text>
+
+    <rect x="16" y="140" width="192" height="26" rx="5" fill="#11182B" stroke="#334155"/>
+    <text x="28" y="157" class="mono" font-size="11.5" font-weight="700" fill="#F8FAFC">matplotlib</text>
+    <text x="196" y="157" text-anchor="end" class="mono" font-size="9.5" fill="#F43F5E">DIAGNOSTICS</text>
+  </g>
+
+  <!-- ================= BOTTOM PIPELINE: CURRENTLY LEARNING ROADMAP ================= -->
+  <rect x="28" y="246" width="1144" height="122" rx="12" fill="#0D1322" stroke="#1E293B" stroke-width="1.2"/>
+  <text x="48" y="272" class="mono" font-size="11" font-weight="700" fill="#F59E0B" letter-spacing="1">NEXT-STEP EXPANSION PIPELINE // DELIBERATE LEARNING ROADMAP (IN ORDER)</text>
+  <text x="720" y="272" class="sans" font-size="12" fill="#64748B">None of these are claimed in the production stack above yet.</text>
+
+  <!-- Connecting Pipeline Track between the 4 Roadmap Nodes -->
+  <line x1="180" y1="320" x2="1020" y2="320" stroke="#334155" stroke-width="2.5"/>
+  <line x1="180" y1="320" x2="1020" y2="320" stroke="url(#roadLine)" stroke-width="2.5" class="road-anim"/>
+
+  <!-- Stage 01: Apache Airflow -->
+  <g transform="translate(48, 288)">
+    <rect width="248" height="64" rx="8" fill="#11182B" stroke="#0891B2" stroke-width="1.3"/>
+    <rect x="12" y="12" width="32" height="18" rx="4" fill="#083344"/>
+    <text x="28" y="25" text-anchor="middle" class="mono" font-size="10" font-weight="800" fill="#22D3EE">01</text>
+    <text x="54" y="26" class="sans" font-size="14" font-weight="800" fill="#F8FAFC">Apache Airflow</text>
+    <text x="12" y="48" class="mono" font-size="10.5" fill="#94A3B8">DAG authoring, retries, scheduling</text>
+  </g>
+
+  <!-- Stage 02: dbt -->
+  <g transform="translate(333, 288)">
+    <rect width="248" height="64" rx="8" fill="#11182B" stroke="#7E22CE" stroke-width="1.3"/>
+    <rect x="12" y="12" width="32" height="18" rx="4" fill="#2E1065"/>
+    <text x="28" y="25" text-anchor="middle" class="mono" font-size="10" font-weight="800" fill="#A855F7">02</text>
+    <text x="54" y="26" class="sans" font-size="14" font-weight="800" fill="#F8FAFC">dbt (data build tool)</text>
+    <text x="12" y="48" class="mono" font-size="10.5" fill="#94A3B8">SQL models, lineage, tests &amp; docs</text>
+  </g>
+
+  <!-- Stage 03: PySpark -->
+  <g transform="translate(618, 288)">
+    <rect width="248" height="64" rx="8" fill="#11182B" stroke="#D97706" stroke-width="1.3"/>
+    <rect x="12" y="12" width="32" height="18" rx="4" fill="#451A03"/>
+    <text x="28" y="25" text-anchor="middle" class="mono" font-size="10" font-weight="800" fill="#F59E0B">03</text>
+    <text x="54" y="26" class="sans" font-size="14" font-weight="800" fill="#F8FAFC">Apache Spark / PySpark</text>
+    <text x="12" y="48" class="mono" font-size="10.5" fill="#94A3B8">Distributed partitioning &amp; transforms</text>
+  </g>
+
+  <!-- Stage 04: Cloud Lakehouse -->
+  <g transform="translate(903, 288)">
+    <rect width="248" height="64" rx="8" fill="#11182B" stroke="#059669" stroke-width="1.3"/>
+    <rect x="12" y="12" width="32" height="18" rx="4" fill="#064E3B"/>
+    <text x="28" y="25" text-anchor="middle" class="mono" font-size="10" font-weight="800" fill="#10B981">04</text>
+    <text x="54" y="26" class="sans" font-size="14" font-weight="800" fill="#F8FAFC">AWS / GCP Data Cloud</text>
+    <text x="12" y="48" class="mono" font-size="10.5" fill="#94A3B8">Managed object storage &amp; warehouse</text>
+  </g>
+</svg>
