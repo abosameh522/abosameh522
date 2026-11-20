@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Portfolio pipeline motif: Sources to Ingestion to Bronze to Silver to Gold to Dashboard and API, with a quality gate between Bronze and Silver. Each repository runs its own batch pipeline; no shared live DAG is implied.">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="var(--border)" stroke-width="0.75" stroke-opacity="0.35"/>
+    </pattern>
+    <style>
+      svg{
+        --canvas:#F5F8FB;--surface:#FFFFFF;--raised:#EAF0F5;--border:#D3DEE8;
+        --text:#172533;--muted:#52687C;--bronze:#A75D13;--silver:#637D91;
+        --gold:#946500;--cyan:#007F92;--violet:#6941B6;
+      }
+      @media (prefers-color-scheme:dark){
+        svg{
+          --canvas:#0B1020;--surface:#121A2A;--raised:#182337;--border:#2B3A4F;
+          --text:#E6EDF5;--muted:#93A4B7;--bronze:#D99245;--silver:#9CB0C3;
+          --gold:#F2C14E;--cyan:#36C5D8;--violet:#A78BFA;
+        }
+      }
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+      .canvas{fill:var(--canvas)}.card{fill:var(--surface);stroke:var(--border);stroke-width:1.2}
+      .t{fill:var(--text)}.m{fill:var(--muted)}
+      .wire{fill:none;stroke:var(--border);stroke-width:2}
+      .arrow{fill:var(--muted);opacity:0.7}
+      .f-cyan{fill:var(--cyan)}.f-bronze{fill:var(--bronze)}.f-silver{fill:var(--silver)}.f-gold{fill:var(--gold)}.f-violet{fill:var(--violet)}
+      .s-cyan{stroke:var(--cyan)}.s-bronze{stroke:var(--bronze)}.s-silver{stroke:var(--silver)}.s-gold{stroke:var(--gold)}.s-violet{stroke:var(--violet)}
+      @keyframes flow30{to{stroke-dashoffset:-30}}
+      @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
+      .packet{fill:none;stroke-width:2;stroke-dasharray:5 25;animation:flow30 1.6s linear infinite}
+      .pulse{animation:pulse 3s ease-in-out infinite}
+      .d1{animation-delay:-0.4s}.d2{animation-delay:-0.8s}.d3{animation-delay:-1.2s}.d4{animation-delay:-0.6s}
+      @media (prefers-reduced-motion:reduce){.packet,.pulse{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" rx="16" class="canvas"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="298.5" rx="15.25" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+
+  <text x="36" y="42" class="sans t" font-size="15" font-weight="700">From raw sources to checked, serving-ready data</text>
+  <text x="1164" y="42" text-anchor="end" class="mono m" font-size="10.5" letter-spacing="1">BATCH · PORTFOLIO MOTIF</text>
+
+  <!-- connectors -->
+  <g>
+    <path d="M190 142H234" class="wire"/><path d="M190 142H234" class="packet s-cyan"/><path d="M229 137L234 142L229 147Z" class="arrow"/>
+    <path d="M398 142H442" class="wire"/><path d="M398 142H442" class="packet s-bronze d1"/><path d="M437 137L442 142L437 147Z" class="arrow"/>
+    <path d="M588 142H632" class="wire"/><path d="M588 142H632" class="packet s-silver d2"/>
+    <polygon points="610,133 619,142 610,151 601,142" fill="var(--surface)" stroke="var(--violet)" stroke-width="1.5"/>
+    <polygon points="610,128 624,142 610,156 596,142" fill="none" stroke="var(--violet)" stroke-width="1" stroke-opacity="0.35" class="pulse d3"/>
+    <text x="610" y="166" text-anchor="middle" class="mono m" font-size="8.5">gate</text>
+    <path d="M627 137L632 142L627 147Z" class="arrow"/>
+    <path d="M778 142H822" class="wire"/><path d="M778 142H822" class="packet s-gold d3"/><path d="M817 137L822 142L817 147Z" class="arrow"/>
+    <path d="M968 142H1012" class="wire"/><path d="M968 142H1012" class="packet s-violet d4"/><path d="M1007 137L1012 142L1007 147Z" class="arrow"/>
+  </g>
+
+  <!-- Sources -->
+  <g transform="translate(28,76)">
+    <rect width="160" height="132" rx="12" class="card"/>
+    <rect x="12" y="0" width="136" height="3" rx="1.5" class="f-cyan"/>
+    <circle cx="144" cy="16" r="3.5" class="f-cyan pulse"/>
+    <text x="14" y="26" class="mono t" font-size="11.5" font-weight="700" letter-spacing="0.5">SOURCES</text>
+    <text x="14" y="50" class="sans m" font-size="10.5">Sentinel-2 · Open-Meteo</text>
+    <text x="14" y="68" class="sans m" font-size="10.5">Olist CSV · URL corpus</text>
+    <text x="14" y="86" class="sans m" font-size="10.5">Telco · credit records</text>
+    <text x="14" y="112" class="mono m" font-size="9">input</text>
+  </g>
+
+  <!-- Ingestion -->
+  <g transform="translate(236,76)">
+    <rect width="160" height="132" rx="12" class="card"/>
+    <rect x="12" y="0" width="136" height="3" rx="1.5" class="f-cyan"/>
+    <circle cx="144" cy="16" r="3.5" class="f-cyan pulse d1"/>
+    <text x="14" y="26" class="mono t" font-size="11.5" font-weight="700" letter-spacing="0.5">INGESTION</text>
+    <text x="14" y="50" class="sans m" font-size="10.5">STAC · CSV · API reads</text>
+    <text x="14" y="68" class="sans m" font-size="10.5">checksums · retries</text>
+    <text x="14" y="86" class="sans m" font-size="10.5">resumable ledger</text>
+    <text x="14" y="112" class="mono m" font-size="9">landing</text>
+  </g>
+
+  <!-- Bronze -->
+  <g transform="translate(444,76)">
+    <rect width="142" height="132" rx="12" class="card"/>
+    <rect x="12" y="0" width="118" height="3" rx="1.5" class="f-bronze"/>
+    <circle cx="126" cy="16" r="3.5" class="f-bronze pulse d2"/>
+    <text x="14" y="26" class="mono t" font-size="11.5" font-weight="700" letter-spacing="0.5">BRONZE</text>
+    <text x="14" y="50" class="sans m" font-size="10.5">raw landing zone</text>
+    <text x="14" y="68" class="sans m" font-size="10.5">COG · JSON · CSV</text>
+    <text x="14" y="86" class="sans m" font-size="10.5">append-only</text>
+    <text x="14" y="112" class="mono m" font-size="9">raw</text>
+  </g>
+
+  <!-- Silver -->
+  <g transform="translate(634,76)">
+    <rect width="142" height="132" rx="12" class="card"/>
+    <rect x="12" y="0" width="118" height="3" rx="1.5" class="f-silver"/>
+    <circle cx="126" cy="16" r="3.5" class="f-silver pulse d3"/>
+    <text x="14" y="26" class="mono t" font-size="11.5" font-weight="700" letter-spacing="0.5">SILVER</text>
+    <text x="14" y="50" class="sans m" font-size="10.5">typed &amp; masked rows</text>
+    <text x="14" y="68" class="sans m" font-size="10.5">NDVI cells · rows</text>
+    <text x="14" y="86" class="sans m" font-size="10.5">NULLs stay NULL</text>
+    <text x="14" y="112" class="mono m" font-size="9">validated</text>
+  </g>
+
+  <!-- Gold -->
+  <g transform="translate(824,76)">
+    <rect width="142" height="132" rx="12" class="card"/>
+    <rect x="12" y="0" width="118" height="3" rx="1.5" class="f-gold"/>
+    <circle cx="126" cy="16" r="3.5" class="f-gold pulse d4"/>
+    <text x="14" y="26" class="mono t" font-size="11.5" font-weight="700" letter-spacing="0.5">GOLD</text>
+    <text x="14" y="50" class="sans m" font-size="10.5">weekly NDVI · anomaly</text>
+    <text x="14" y="68" class="sans m" font-size="10.5">star schema · views</text>
+    <text x="14" y="86" class="sans m" font-size="10.5">model-ready tables</text>
+    <text x="14" y="112" class="mono m" font-size="9">curated</text>
+  </g>
+
+  <!-- Dashboard / API -->
+  <g transform="translate(1014,76)">
+    <rect width="158" height="132" rx="12" class="card"/>
+    <rect x="12" y="0" width="134" height="3" rx="1.5" class="f-violet"/>
+    <circle cx="142" cy="16" r="3.5" class="f-violet pulse"/>
+    <text x="14" y="26" class="mono t" font-size="11.5" font-weight="700" letter-spacing="0.5">DASHBOARD / API</text>
+    <text x="14" y="50" class="sans m" font-size="10.5">Streamlit · FastAPI</text>
+    <text x="14" y="68" class="sans m" font-size="10.5">SQL views · plots</text>
+    <text x="14" y="86" class="sans m" font-size="10.5">read-only consumers</text>
+    <text x="14" y="112" class="mono m" font-size="9">served</text>
+  </g>
+
+  <text x="600" y="252" text-anchor="middle" class="mono m" font-size="10.5">Visual motif — each repository runs its own batch pipeline; no shared live DAG is implied.</text>
+</svg>
