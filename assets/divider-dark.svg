@@ -1,28 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="28" viewBox="0 0 1200 28" role="presentation">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="900" height="24" role="presentation">
   <defs>
-    <linearGradient id="divLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#22D3EE" stop-opacity="0.65"/>
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.85"/>
-      <stop offset="80%" stop-color="#F59E0B" stop-opacity="0.65"/>
-      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#06B6D4" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.65"/>
+      <stop offset="75%" stop-color="#06B6D4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="packetBeam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1"/>
-    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <line x1="20" y1="14" x2="1180" y2="14" stroke="url(#divLine)" stroke-width="1.5"/>
-  <!-- Checkpoints -->
-  <circle cx="300" cy="14" r="3" fill="#06080F" stroke="#22D3EE" stroke-width="1.5"/>
-  <polygon points="600,8 606,14 600,20 594,14" fill="#06080F" stroke="#A855F7" stroke-width="1.5"/>
-  <circle cx="900" cy="14" r="3" fill="#06080F" stroke="#F59E0B" stroke-width="1.5"/>
-  <!-- Animated Stream Pulses -->
-  <rect x="-120" y="12.5" width="95" height="3" rx="1.5" fill="url(#packetBeam)">
-    <animate attributeName="x" values="-120;1220" dur="4.5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="-120" y="12.5" width="75" height="3" rx="1.5" fill="url(#packetBeam)" opacity="0.7">
-    <animate attributeName="x" values="-120;1220" dur="4.5s" begin="-2.25s" repeatCount="indefinite"/>
-  </rect>
+  <line x1="20" y1="12" x2="880" y2="12" stroke="url(#line)" stroke-width="1.5"/>
+  <path id="track" d="M 40 12 L 860 12" fill="none"/>
+  <circle r="3.5" fill="#22D3EE" filter="url(#glow)">
+    <animateMotion dur="4.2s" repeatCount="indefinite"><mpath href="#track"/></animateMotion>
+  </circle>
+  <circle r="2.5" fill="#A78BFA" filter="url(#glow)">
+    <animateMotion dur="4.2s" begin="2.1s" repeatCount="indefinite"><mpath href="#track"/></animateMotion>
+  </circle>
 </svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="900" height="170" role="img" aria-label="Animated Medallion Architecture: Bronze to Silver to Gold to Serve">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .hdr { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; fill: #475569; }
+    .stage { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; fill: #0F172A; }
+    .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; fill: #475569; }
+    .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; }
+    .link { fill: none; stroke: #94A3B8; stroke-width: 2.2; stroke-dasharray: 5 4; animation: dash 1.6s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -18; } }
+  </style>
+
+  <rect width="900" height="170" rx="14" fill="url(#bg)" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="26" y="28" class="hdr">HOW I ENGINEER DATA  //  MEDALLION ARCHITECTURE &amp; QUALITY GATES</text>
+
+  <path id="c1" d="M 212 96 L 254 96" class="link"/>
+  <path id="c2" d="M 436 96 L 478 96" class="link"/>
+  <path id="c3" d="M 660 96 L 702 96" class="link"/>
+
+  <circle r="4" fill="#D97706" opacity="0">
+    <animateMotion dur="1.6s" repeatCount="indefinite" begin="0s"><mpath href="#c1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.88;1" dur="1.6s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <circle r="4" fill="#0284C7" opacity="0">
+    <animateMotion dur="1.6s" repeatCount="indefinite" begin="0.5s"><mpath href="#c2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.88;1" dur="1.6s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle r="4" fill="#7C3AED" opacity="0">
+    <animateMotion dur="1.6s" repeatCount="indefinite" begin="1s"><mpath href="#c3"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.88;1" dur="1.6s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+
+  <g transform="translate(26, 46)">
+    <rect width="186" height="100" rx="10" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="186" height="4" rx="2" fill="#F59E0B"/>
+    <text x="14" y="24" class="tag" fill="#B45309">01 · BRONZE (RAW)</text>
+    <text x="14" y="48" class="stage">Ingest &amp; Land</text>
+    <text x="14" y="68" class="desc">APIs, CSVs &amp; SQL dumps</text>
+    <text x="14" y="85" class="desc">Immutable Parquet / Staging</text>
+  </g>
+
+  <g transform="translate(254, 46)">
+    <rect width="182" height="100" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.2"/>
+    <rect x="0" y="0" width="182" height="4" rx="2" fill="#0284C7"/>
+    <text x="14" y="24" class="tag" fill="#0369A1">02 · SILVER (CLEAN)</text>
+    <text x="14" y="48" class="stage">Validate &amp; Clean</text>
+    <text x="14" y="68" class="desc">Pandera schema contracts</text>
+    <text x="14" y="85" class="desc">Dedup, nulls &amp; idempotency</text>
+  </g>
+
+  <g transform="translate(478, 46)">
+    <rect width="182" height="100" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.2"/>
+    <rect x="0" y="0" width="182" height="4" rx="2" fill="#7C3AED"/>
+    <text x="14" y="24" class="tag" fill="#6D28D9">03 · GOLD (CURATED)</text>
+    <text x="14" y="48" class="stage">Model &amp; Enrich</text>
+    <text x="14" y="68" class="desc">Star Schema &amp; SQL views</text>
+    <text x="14" y="85" class="desc">DuckDB &amp; PostgreSQL marts</text>
+  </g>
+
+  <g transform="translate(702, 46)">
+    <rect width="172" height="100" rx="10" fill="#FFFFFF" stroke="#10B981" stroke-width="1.2"/>
+    <rect x="0" y="0" width="172" height="4" rx="2" fill="#10B981"/>
+    <text x="14" y="24" class="tag" fill="#047857">04 · SERVE &amp; MONITOR</text>
+    <text x="14" y="48" class="stage">Deliver Value</text>
+    <text x="14" y="68" class="desc">BI, Streamlit &amp; FastAPI</text>
+    <text x="14" y="85" class="desc">Automated pytest + CI/CD</text>
+  </g>
+</svg>
