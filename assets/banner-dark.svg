@@ -78,7 +78,7 @@
     <text x="38" y="170" class="sub" font-size="15">&amp; quality-gated lakehouses from raw data to insight.</text>
 
     <!-- Meta Row -->
-    <text x="38" y="198" class="muted" font-size="12.5">Cairo, Egypt  ·  CS &amp; AI '27  ·  @abosameh522</text>
+    <text x="38" y="198" class="muted" font-size="12.5">Cairo, Egypt  ·  @abosameh522  ·  SQL · Python · ETL/ELT · Cloud</text>
 
     <!-- RIGHT SECTION: Animated Data Pipeline Visualization -->
     <rect x="478" y="24" width="388" height="184" rx="14" fill="#0B1324" fill-opacity="0.78" stroke="#1E293B" stroke-width="1.2"/>
